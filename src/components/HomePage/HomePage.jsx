@@ -1,12 +1,13 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import "./homePage.css";
 import AppHeader from "../AppHeader/AppHeader";
 
 const HomePage = () => {
   return (
-    <div class="container">
+    <div className="container" id="homePage">
       <AppHeader />
-      <div class="content">
+      <div className="content">
+        {" "}
         <img src="/img/ArchVis.png" alt="Логотип ArchVis" className="logo" />
         <h1>ДИЗАЙН ВАШОГО ДОМУ У 3D</h1>
         <p>
@@ -16,13 +17,14 @@ const HomePage = () => {
           <br />
           <span>без професійних навичок</span>
         </p>
-        <div class="buttons">
-          <a href="#" class="start-btn">
+        <div className="buttons">
+          <a href="/start" className="start-btn">
+            {" "}
             Старт
           </a>
         </div>
-        <div class="arrow-down">
-          <a href="#about">
+        <div className="arrow-down">
+          <a href="/aboutAV">
             <img src="/img/white-down-arrow-png-2.png" alt="Стрілка вниз" />
           </a>
         </div>
@@ -30,4 +32,5 @@ const HomePage = () => {
     </div>
   );
 };
+
 export default HomePage;

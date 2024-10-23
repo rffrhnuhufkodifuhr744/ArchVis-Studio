@@ -1,12 +1,16 @@
-import React, { PureComponent } from "react";
+import React from "react";
+import { Link } from "react-scroll";
 import "./appHeader.css";
 
 const AppHeader = () => {
   return (
-    <nav class="navbar">
+    <nav className="navbar">
       <ul>
         <li>
-          <a href="/about">Про нас</a>
+          <a href="/">Головна</a>
+        </li>
+        <li>
+          <a href="/aboutAV">Про нас</a>
         </li>
         <li>
           <a href="/examples">Шаблони та приклади</a>
@@ -17,12 +21,10 @@ const AppHeader = () => {
         <li>
           <a href="/contacts">Контакти</a>
         </li>
-        <li>
-          <a href="/login" class="login-button">
-            Увійти
-          </a>
-        </li>
       </ul>
+      <a href="/login" className="login-button">
+        Увійти
+      </a>
     </nav>
   );
 };
